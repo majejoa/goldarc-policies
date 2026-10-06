@@ -16,19 +16,20 @@
 <p class="lang-switch">언어: <strong>한국어</strong> · <a href="#" onclick="setLang('en');return false;">English</a></p>
 
 <h1>🔒 금시세표 개인정보처리방침</h1>
-<p class="eff">시행일: 2026-10-05</p>
-<p class="lead">금시세표(이하 "서비스")는 금·은·백금·팔라듐 시세를 보여주는 앱입니다. 금시세표는 <strong>계정 없이(로그인 없이)</strong> 동작하며, <strong>개인정보를 직접 수집·저장·전송하지 않습니다.</strong></p>
+<p class="eff">시행일: 2026-10-06</p>
+<p class="lead">금시세표(이하 "서비스")는 금·은·백금·팔라듐·구리 시세를 보여주는 앱입니다. <strong>회원가입·로그인이 없으며 이름·이메일 같은 계정 정보를 요청하지 않습니다.</strong> 광고 제공에는 Google AdMob을 사용하고, 1.2부터 앱 개선을 위한 이용 통계와 오류 보고에 Firebase Analytics·Crashlytics를 사용합니다.</p>
 <blockquote>이 문서는 마지막에 명시된 시행일 기준이며, 변경 시 본 페이지에서 고지합니다.</blockquote>
 
 <h2>1. 요약 (한눈에)</h2>
 <ul>
 <li>금시세표는 <strong>회원가입·로그인이 없고, 이름·이메일 같은 계정 정보를 수집하지 않습니다.</strong></li>
 <li>시세 데이터와 설정은 <strong>이용자 기기 안에만</strong> 저장됩니다.</li>
-<li>광고 표시를 위한 <strong>Google AdMob</strong>만 제3자 처리자로 사용합니다.</li>
+<li>광고에는 <strong>Google AdMob</strong>, 이용 통계와 오류 보고에는 <strong>Firebase Analytics·Crashlytics</strong>를 사용합니다.</li>
+<li>설정의 <strong>사용 통계 및 오류 정보 공유</strong>를 끌 수 있습니다. 입력한 무게·금액·보유량·목표가는 분석 이벤트로 전송하지 않습니다.</li>
 </ul>
 
 <h2>2. 앱이 직접 수집하는 정보</h2>
-<p>없습니다. 앱은 어떤 권한도 추가로 요구하지 않으며(인터넷 접근 제외), 시세 캐시·화면 설정은 기기 내부에만 저장됩니다.</p>
+<p>회원 이름·이메일·전화번호·연락처·정밀 위치를 수집하지 않습니다. 시세 캐시·화면 설정과 계산에 입력한 값은 기기 안에서 처리합니다. 통계 공유가 켜져 있고 필요한 동의 조건을 충족하면 앱·화면 이용, 위젯을 통한 앱 진입, 선택한 금속 종류 같은 제한된 이벤트를 Firebase에 전송합니다. 오류 보고에는 앱·운영체제 버전, 기기 정보, 설치 식별자, 오류 시각과 스택 추적 등이 포함될 수 있습니다. 위젯의 백그라운드 갱신을 앱 방문 이벤트로 보고하지 않습니다.</p>
 
 <h2>3. 네트워크 통신</h2>
 <p>시세 표시를 위해 아래 서비스에 <strong>익명 요청</strong>만 보냅니다. 이 과정에서 개인정보는 전송되지 않습니다(통신에 수반되는 IP 등 제외).</p>
@@ -38,21 +39,27 @@
 <tr><td>gold-api.com</td><td>귀금속 국제 현물 시세</td></tr>
 <tr><td>Yahoo Finance</td><td>시세 히스토리 차트</td></tr>
 <tr><td>open.er-api.com</td><td>환율(USD/KRW)</td></tr>
+<tr><td>kgold.co.kr</td><td>ko-KR 금 상세의 국내 살 때·팔 때 공개 가격</td></tr>
 </tbody>
 </table>
 
-<h2>4. 광고 (제3자 처리자)</h2>
+<h2>4. 광고·통계·오류 보고 (제3자 처리자)</h2>
 <p>앱은 광고 표시를 위해 <strong>Google AdMob</strong>을 사용합니다. AdMob은 광고 제공 과정에서 광고 ID(ADID), 기기 정보, 대략적 위치(IP 기반) 등을 수집할 수 있습니다.</p>
 <table>
 <thead><tr><th>처리자</th><th>목적</th><th>개인정보 처리방침</th></tr></thead>
 <tbody>
 <tr><td>Google AdMob</td><td>배너·전면 광고 제공</td><td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td></tr>
+<tr><td>Google Firebase Analytics</td><td>앱 이용·재방문·광고 이벤트 측정</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+<tr><td>Google Firebase Crashlytics</td><td>앱 오류 진단과 안정성 개선</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
 </tbody>
 </table>
 <ul>
-<li>동의가 필요한 지역(EEA 등)에서는 Google UMP를 통해 <strong>광고 개인화 동의를 먼저 요청</strong>합니다.</li>
+<li>동의가 필요한 지역(EEA 등)에서는 Google UMP로 광고·통계 저장에 대한 선택을 요청합니다. Analytics는 통계 저장 동의가 확인되기 전 수집을 중지합니다. 동의가 필요 없는 상태도 UMP가 확인합니다.</li>
+<li>필요한 지역에서는 설정의 광고 개인정보 선택에서 동의를 변경할 수 있습니다. 모든 지역에서 사용 통계 및 오류 정보 공유를 끄면 Analytics·Crashlytics 수집을 중지하고 기기의 Analytics 데이터와 전송하지 않은 오류 보고를 정리합니다. 이미 전송된 데이터가 즉시 삭제된다는 의미는 아닙니다.</li>
+<li>Firebase Analytics의 광고 ID 수집은 비활성화합니다. AdMob의 광고 ID 처리와 구분됩니다. 이름·이메일 등으로 이용자를 식별하거나 계산 입력값을 사용자 속성으로 보내지 않습니다.</li>
 <li>기기 설정 → Google → 광고에서 광고 ID 재설정 또는 개인화 제한이 가능합니다.</li>
 </ul>
+<p>Google은 각 서비스의 정책에 따라 데이터를 처리·보관할 수 있습니다. Firebase 처리·보관 및 삭제 안내는 위 링크를 참조하세요. 개인정보 관련 문의는 아래 이메일로 접수합니다.</p>
 
 <h2>5. 아동의 개인정보</h2>
 <p>금시세표는 아동을 주 대상으로 하지 않으며, 아동의 개인정보를 알고 수집하지 않습니다.</p>
@@ -73,29 +80,34 @@
 <p class="lang-switch">Language: <strong>English</strong> · <a href="#" onclick="setLang('ko');return false;">한국어</a></p>
 
 <h1>🔒 Gold Price Board Privacy Policy</h1>
-<p class="eff">Effective date: 2026-10-05</p>
-<p class="lead">Gold Price Board ("the service") displays gold, silver, platinum and palladium prices. It works <strong>without any account or login</strong> and <strong>does not directly collect, store, or transmit personal data.</strong></p>
+<p class="eff">Effective date: 2026-10-06</p>
+<p class="lead">Gold Price Board ("the service") displays gold, silver, platinum, palladium and copper prices. <strong>No account or login is required, and we do not request account details such as names or email addresses.</strong> We use Google AdMob for advertising and, from version 1.2, Firebase Analytics and Crashlytics for usage measurement and crash reporting.</p>
 <blockquote>This document is current as of the effective date above; changes are announced on this page.</blockquote>
 
 <h2>1. Summary</h2>
 <ul>
 <li>No sign-up, no login, and no collection of account data such as names or emails.</li>
 <li>Price data and settings are stored <strong>only on your device</strong>.</li>
-<li><strong>Google AdMob</strong> is the only third-party processor, used for advertising.</li>
+<li>We use <strong>Google AdMob</strong> for ads and <strong>Firebase Analytics and Crashlytics</strong> for usage and error reports.</li>
+<li>You can turn off <strong>Share usage and crash reports</strong> in Settings. Entered weights, amounts, holdings and target prices are not sent as analytics events.</li>
 </ul>
 
 <h2>2. Data collected by the app</h2>
-<p>None. The app requests no permissions beyond internet access; price caches and settings stay on the device.</p>
+<p>We do not collect account names, email addresses, phone numbers, contacts or precise location. Price caches, settings and calculator inputs are processed on your device. When sharing is enabled and required consent conditions are met, Firebase receives limited events such as app and screen use, widget entries and the selected metal. Crash reports may include app and operating system versions, device information, installation identifiers, error times and stack traces. Background widget refreshes are not reported as app visits.</p>
 
 <h2>3. Network requests</h2>
-<p>The app sends <strong>anonymous requests</strong> to the following services to display prices. No personal data is included (beyond what any network request entails, such as IP address): gold-api.com (spot prices), Yahoo Finance (price history), open.er-api.com (exchange rates).</p>
+<p>For prices, the app requests public data from gold-api.com (spot prices), Yahoo Finance (price history), open.er-api.com (exchange rates), and kgold.co.kr (domestic buy/sell quotes in ko-KR gold details). We do not include calculator inputs or account details in those requests; the services receive network information such as IP addresses.</p>
 
-<h2>4. Advertising (third-party processor)</h2>
+<h2>4. Advertising, analytics and crash reporting</h2>
 <p>The app uses <strong>Google AdMob</strong> to show ads. AdMob may collect the advertising ID, device information, and coarse (IP-based) location to serve ads. See <a href="https://policies.google.com/technologies/ads">Google's advertising policies</a>.</p>
 <ul>
-<li>In regions requiring consent (e.g. EEA), the app requests ad-personalization consent via Google UMP before loading ads.</li>
+<li>In regions requiring consent (e.g. EEA), Google UMP requests choices for advertising and analytics storage. Analytics collection is disabled until analytics storage consent is confirmed. UMP also determines when consent is not required.</li>
+<li>Where required, you can revise consent using Ad privacy choices in Settings. In every region, disabling Share usage and crash reports stops Analytics and Crashlytics collection, resets local Analytics data and deletes unsent crash reports. This does not immediately delete data already transmitted.</li>
+<li>Firebase Analytics collects usage, retention and ad events; Firebase Crashlytics reports errors to improve reliability. See <a href="https://firebase.google.com/support/privacy">Firebase privacy, retention and deletion information</a>.</li>
+<li>Advertising ID collection by Firebase Analytics is disabled, separately from AdMob advertising ID processing. We do not set names, emails or calculator inputs as analytics user properties.</li>
 <li>You can reset your advertising ID or limit personalization in device Settings → Google → Ads.</li>
 </ul>
+<p>Google may process and retain data under its service policies. You may contact us at the email below for privacy inquiries.</p>
 
 <h2>5. Children</h2>
 <p>The service is not directed at children and does not knowingly collect children's data.</p>
